@@ -1,9 +1,9 @@
 def stack(our_list, operation, new_element=None):
     if operation == 'add':
-        our_list.append(new_element)
+        our_list.insert(0,new_element)
     elif operation == 'remove':
         if our_list:
-            our_list.pop()
+            our_list.pop(0)
     return our_list
 
 
